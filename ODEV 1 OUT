@@ -1,0 +1,26 @@
+namespace Odev_1_OUT
+{
+    class Program
+    {
+        static void Main()
+        {
+            string ad, soyad;
+            int yas;
+
+            // out kullanarak metodu çağırıyoruz
+            BilgileriGetir(out ad, out soyad, out yas);
+
+            // Metod sonrasında döndürülen bilgileri ekrana yazdırıyoruz
+            Console.WriteLine($"Ad: {ad}, Soyad: {soyad}, Yaş: {yas}");
+        }
+
+        // out parametreleri ile bilgi döndüren metod
+        static void BilgileriGetir(out string ad, out string soyad, out int yas)
+        {
+            // Burada parametrelerin değerlerini atıyoruz
+            ad = "Ahmet";
+            soyad = "Çelik";
+            yas = 28;
+        }
+    }
+}
